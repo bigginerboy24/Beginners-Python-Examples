@@ -18,13 +18,13 @@ Type the desired operation and press ENTER.
 Type 23 * 46 then press ENTER.)
 """)
 while True:
-    data = input("İşleminiz: ")
+    data = input("Please enter your calculation: ")
     if data == "q":
-        print("Exitingr...")
+        print("Exiting...")
         break
     for s in data:
         if s not in allowed_characters:
-            print("Neyin peşindesin?!")
+            print("Invalid character!")
             quit()
     calculate = eval(data)
     print(calculate)
