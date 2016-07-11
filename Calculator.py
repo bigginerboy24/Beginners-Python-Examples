@@ -14,12 +14,16 @@ start = """
 (6) square root
 """
 print(start)
+
+# Our if, elif and else statement all depends on key = 1, if we change that to something else, it wont't work.
 key = 1
 while key == 1:
     question = input("Please enter the number for calculation you like to do (To quit type q): ")
+    # This is where we set key = 0, so while statement is not true and our program stop working.
     if question == "q":
         print("exiting...")
         key = 0
+    # For all calculation we are using build function in Python: + - * / **
     elif question == "1":
         number1 = int(input("For addition enter first number: "))
         number2 = int(input("For addition enter second number: "))
