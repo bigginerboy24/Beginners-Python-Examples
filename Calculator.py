@@ -39,7 +39,10 @@ while key == 1:
     elif question == "4":
         number7 = int(input("For division enter first number: "))
         number8 = int(input("For division enter second number: "))
-        print(number7, "/", number8, "=", number7 / number8)
+        try:
+            print(number7, "/", number8, "=", number7 / number8)
+        except ZeroDivisionError:
+            print("You can't divide by 0!")
     elif question == "5":
         number9 = int(input("Enter the number you want to calculate the square: "))
         print(number9, "square is =", number9 ** 2)
